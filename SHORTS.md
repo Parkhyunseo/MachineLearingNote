@@ -12,6 +12,8 @@
     * Regularization will help you reduce overfitting.
     * Regularization will drive your weights to lower values.
     * L2 regularization and Dropout are two very effective regularization techniques.
+    * Gradient checking verifies closeness between the gradients from backpropagation and the numerical approximation of the gradient (computed using forward propagation).
+    * Gradient checking is slow, so we don't run it in every iteration of training. You would usually run it only to make sure your code is correct, then turn it off and use backprop for the actual learning process.
 
 # What you should remember - the implicatios of L2-regularization on:
     * The cost computation:
