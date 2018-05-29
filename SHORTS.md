@@ -14,6 +14,11 @@
     * L2 regularization and Dropout are two very effective regularization techniques.
     * Gradient checking verifies closeness between the gradients from backpropagation and the numerical approximation of the gradient (computed using forward propagation).
     * Gradient checking is slow, so we don't run it in every iteration of training. You would usually run it only to make sure your code is correct, then turn it off and use backprop for the actual learning process.
+    * The difference between gradient descent, mini-batch gradient descent and stochastic gradient descent is the number of examples you use to perform one update step.
+    * You have to tune a learning rate hyperparameter  αα .
+    * With a well-turned mini-batch size, usually it outperforms either gradient descent or stochastic gradient descent (particularly when the training set is large).
+    * Momentum takes past gradients into account to smooth out the steps of gradient descent. It can be applied with batch gradient descent, mini-batch gradient descent or stochastic gradient descent.
+    * You have to tune a momentum hyperparameter  ββ  and a learning rate  αα .
 
 # What you should remember - the implicatios of L2-regularization on:
     * The cost computation:
@@ -29,3 +34,13 @@
     * You only use dropout during training. Don't use dropout (randomly eliminate nodes) during test time.
         - Apply dropout both during forward and backward propagation.
     * During training time, divide each dropout layer by keep_prob to keep the same expected value for the activations. For example, if keep_prob is 0.5, then we will on average shut down half the nodes, so the output will be scaled by 0.5 since only the remaining half are contributing to the solution. Dividing by 0.5 is equivalent to multiplying by 2. Hence, the output now has the same expected value. You can check that this works even when keep_prob is other values than 0.5.
+
+# Stochastic Gradient Descent (SGD) VS Gradient Descent (GD)
+    SGD - It iteratively update only one sample in trainsing set.
+    GD - It iteratively update whole sample
+    
+    * if training sample was big, GD was so slowly move.
+    
+# Optimization algorithms
+    Momentum usually helps, but given the small learning rate and the simplistic dataset, its impact is almost negligeable. Also, the huge oscillations you see in the cost come from the fact that some minibatches are more difficult thans others for the optimization algorithm.
+    Adam on the other hand, clearly outperforms mini-batch gradient descent and Momentum. If you run the model for more epochs on this simple dataset, all three methods will lead to very good results. However, you've seen that Adam converges a lot faster.
