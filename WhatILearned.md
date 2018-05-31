@@ -1,0 +1,3 @@
+### Structuring Machine Learning
+* Adding this data to the training set will change the training set distribution. However, it is not a problem to have different training and dev distribution. On the contrary, it would be very problematic to have different dev and test set distributions.
+* A learning algorithm’s performance can be better than human-level performance but it can never be better than Bayes error.

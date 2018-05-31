@@ -44,3 +44,16 @@
 # Optimization algorithms
     Momentum usually helps, but given the small learning rate and the simplistic dataset, its impact is almost negligeable. Also, the huge oscillations you see in the cost come from the fact that some minibatches are more difficult thans others for the optimization algorithm.
     Adam on the other hand, clearly outperforms mini-batch gradient descent and Momentum. If you run the model for more epochs on this simple dataset, all three methods will lead to very good results. However, you've seen that Adam converges a lot faster.
+
+# Hyperparameter tuning, Batch Normalization
+    - If searching among a large number of hyperparameters, you should try values in a random values.
+    - Try random values, don't do grid search. Beacause you don't know which hyperparameters are more important than others.
+    - some hyperparameters, such as the learning rate, are more critical than others.
+    - Minor changes in your model could potentially need you to find good hyperparameters again from scratch.
+    
+# Bird recognition in the city of Peacetopia
+    - What is the evaluation metric?
+    - How do you structure your data into train/dev/test sets?
+    
+    - 요구사항이 있을 때 ex) 새로운 것을 학습하는데 n초 제한, 메모리 제한 등이 있을 때 제한되는 사항을 만족하는 상황에서 나머지 조건을 Optimization 시킨다.
+    
