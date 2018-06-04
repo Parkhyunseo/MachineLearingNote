@@ -16,3 +16,7 @@
     ----------------------------------------------------------------
     > Use the data you have to define a new evaluation metric (using a new dev/test set) taking into account the new species, and use that to drive further progress for your team.
     ----------------------------------------------------------------
+    
+# Autonomous driving ( case study )
+    - Multi-task Learning ?
+    

@@ -57,3 +57,7 @@
     
     - 요구사항이 있을 때 ex) 새로운 것을 학습하는데 n초 제한, 메모리 제한 등이 있을 때 제한되는 사항을 만족하는 상황에서 나머지 조건을 Optimization 시킨다.
     
+# Autonomous driving ( case study )
+    - As discussed in lecture, applied ML is a highly iterative process. If you train a basic model and carry out error analysis (see what mistakes it makes) it will help point you in more promising directions.
+    - As seen in the lecture on multi-task learning, you can compute the cost such that it is not influenced by the fact that some entries haven’t been labeled
+    
