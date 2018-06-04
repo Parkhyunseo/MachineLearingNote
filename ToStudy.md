@@ -28,4 +28,8 @@
     - trainsing-dev, dev, test, what is difference ?
     
     - What is "swamping"?
+    > Swamping and Masking Problem
+    > Swamping : 정상치가 이상치에 가까운 경우 이상치로 잘못 분류하게 되는 현상
+    > Masking : 이상치가 군집화되어 있으면 정상치로 잘못 분류하게 되는 현상.
+    
     - end to end approach, step by step approach
